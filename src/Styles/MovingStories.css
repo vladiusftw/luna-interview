@@ -1,0 +1,142 @@
+.stories-container{
+    width: 400px;
+    align-self: flex-end;
+    background-color: #F3F3F3;
+}
+
+.stories-item-container{
+    display: flex;
+    align-items: center;
+}
+
+.stories-item-left{
+    width: 120px;
+    height: 120px;
+}
+
+.stories-item-right{
+
+}
+
+.stories-item-right-title{
+    display: block;
+    font-family: "Proxima-Nova-SemiBold";
+    padding-bottom: 10px;
+}
+
+.stories-item-right-date-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stories-item-right-date-img{
+    width: 20px;
+    height: 20px;
+}
+
+.stories-item-right-date-text{
+    font-family: "Proxima-Nova-Regular";
+    font-size: 10px;
+}
+
+@media (max-width:600px){
+    .stories-container{
+        align-self: center;
+        width: 90%;
+        padding: 10px 10px;
+    }
+
+    .stories-item-right-title{
+        font-size: 16px;
+    }
+
+    .stories-item-left{
+        width: 140px;
+        height: 120px;
+        border-radius: 8px;
+        margin-right: 40px;
+    }
+}
+
+@media (min-width:600px) and (max-width:900px){
+    .stories-container{
+        align-self: center;
+        width: 90%;
+        padding: 10px 10px;
+    }
+
+    .stories-item-left{
+        width: 140px;
+        height: 120px;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+
+    .stories-item-right{
+        padding-right: 10px;
+    }
+
+    .stories-item-right-title{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 900px){
+    .stories-container{
+        align-self: flex-end;
+        width: 70%;
+        padding: 10px 10px;
+    }
+
+    .stories-item-left{
+        width: 140px;
+        height: 120px;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+
+    .stories-item-right-title{
+        font-size: 12px;
+    }
+
+   
+}
+
+@media (min-width: 1200px){
+    .stories-container{
+        align-self: flex-end;
+        width: 70%;
+        padding: 10px 10px;
+    }
+
+    .stories-item-left{
+        width: 140px;
+        height: 120px;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+
+    .stories-item-right-title{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1400px){
+    .stories-container{
+        align-self: flex-end;
+        width: 70%;
+        padding: 10px 10px;
+    }
+
+    .stories-item-left{
+        width: 140px;
+        height: 120px;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+
+    .stories-item-right-title{
+        font-size: 14px;
+    }
+}

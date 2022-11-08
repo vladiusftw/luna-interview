@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: "Proxima-Nova-Regular";
+  src: local("ProximaNova-Regular"),
+  url("./assets/fonts/ProximaNova-Regular.otf") format("truetype")
+}
+
+@font-face{
+  font-family: "Proxima-Nova-Black";
+  src: local("ProximaNova-Black"),
+  url("./assets/fonts/Proxima\ Nova\ Black.otf") format("truetype")
+}
+
+@font-face{
+  font-family: "Proxima-Nova-Bold";
+  src: local("ProximaNova-Bold"),
+  url("./assets/fonts/Proxima\ Nova\ Alt\ Bold.otf") format("truetype")
+}
+
+@font-face{
+  font-family: "Proxima-Nova-SemiBold";
+  src: local("ProximaNova-SemiBold"),
+  url("./assets/fonts/Proxima\ Nova\ Alt\ Bold.otf") format("truetype")
+}
