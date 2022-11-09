@@ -79,7 +79,7 @@
 
 @media (min-width: 1200px) {
   .navbar-container {
-    width: 92%;
+    width: 90%;
   }
   .navbar-logo {
     font-size: 42px;
@@ -92,6 +92,9 @@
 }
 
 @media (min-width: 1400px) {
+  .navbar-container {
+    width: 85%;
+  }
   .navbar-right-container {
     gap: 50px;
   }

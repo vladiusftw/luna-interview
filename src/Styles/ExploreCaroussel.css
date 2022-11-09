@@ -10,6 +10,7 @@
 .explore-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .explore-item-container {
@@ -48,10 +49,27 @@
     align-self: flex-end;
     margin-right: 20px;
   }
+
+  .explore-container {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 1200px) {
   .explore-container {
     width: 95%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .explore-container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1550px) {
+  .explore-container {
+    width: 80%;
   }
 }
