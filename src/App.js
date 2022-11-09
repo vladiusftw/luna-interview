@@ -6,19 +6,21 @@ import MovingStories from "./Components/MovingStories";
 import Navbar from "./Components/Navbar";
 import Story from "./Components/Story";
 import Box from "@mui/material/Box";
+import ExploreCaroussel from "./Components/ExploreCaroussel";
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className="app">
+    <Box className="app">
       <Story />
       <MovingStories />
       <FeaturedStories />
       <Box className="second-screen">
         <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
         <MiniNavbar openMenu={openMenu} />
+        <ExploreCaroussel />
       </Box>
-    </div>
+    </Box>
   );
 }
 

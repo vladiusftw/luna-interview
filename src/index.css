@@ -1,37 +1,37 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-@font-face{
+@font-face {
   font-family: "Proxima-Nova-Regular";
   src: local("ProximaNova-Regular"),
-  url("./assets/fonts/ProximaNova-Regular.otf") format("truetype")
+    url("./assets/fonts/ProximaNova-Regular.otf") format("truetype");
 }
 
-@font-face{
+@font-face {
   font-family: "Proxima-Nova-Black";
   src: local("ProximaNova-Black"),
-  url("./assets/fonts/Proxima\ Nova\ Black.otf") format("truetype")
+    url("./assets/fonts/Proxima\ Nova\ Black.otf") format("truetype");
 }
 
-@font-face{
+@font-face {
   font-family: "Proxima-Nova-Bold";
   src: local("ProximaNova-Bold"),
-  url("./assets/fonts/Proxima\ Nova\ Alt\ Bold.otf") format("truetype")
+    url("./assets/fonts/Proxima\ Nova\ Alt\ Bold.otf") format("truetype");
 }
 
-@font-face{
+@font-face {
   font-family: "Proxima-Nova-SemiBold";
   src: local("ProximaNova-SemiBold"),
-  url("./assets/fonts/Proxima\ Nova\ Alt\ Bold.otf") format("truetype")
+    url("./assets/fonts/Proxima\ Nova\ Alt\ Bold.otf") format("truetype");
 }

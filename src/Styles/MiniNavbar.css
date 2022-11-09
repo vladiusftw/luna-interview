@@ -12,19 +12,33 @@
     transition: transform 1s linear;
 }
 
-.navbar-logo{}
+.mini-navbar-item{
+    font-family: "Proxima-Nova-Bold";
+}
 
-.navbar-right-container{}
-
-.navbar-item{}
+.mini-navbar-item:hover{
+    text-decoration: underline 2px;
+}
 
 @media (max-width:600px){
-   
+    .mini-navbar-container{
+        gap: 80px;
+    }
+
+    .mini-navbar-item{
+        font-size: 28px;
+    }
     
 }
 
 @media (min-width:600px) and (max-width:900px){
-    
+    .mini-navbar-container{
+        gap: 90px;
+    }
+
+    .mini-navbar-item{
+        font-size: 32px;
+    }
     
 }
 

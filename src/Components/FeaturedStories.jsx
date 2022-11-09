@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/FeaturedStories.css";
 import { useRef } from "react";
+import Arrows from "./Arrows";
 
 const FeaturedStories = () => {
   const settings = {
@@ -33,7 +34,7 @@ const FeaturedStories = () => {
   };
 
   const carousselRef = useRef(null);
-  const [leftPressed,setLeftPressed] = useState(true)
+  const [leftPressed, setLeftPressed] = useState(true);
 
   const Item = ({ item }) => {
     return (
@@ -79,26 +80,12 @@ const FeaturedStories = () => {
             "Cursus fames vel donec amet. Varius ultrices ac malesuada lacinia proin. Lectus malesuada tempus neque nibh."
           }
         </Typography>
-        <Box className="featured-arrows-container">
-          <Button
-            variant="text"
-            onClick={() => {carousselRef.current.slickPrev();setLeftPressed(true)}}
-          >
-            <img
-              className={leftPressed ? "featured-left-arrow" : "featured-right-arrow"}
-              src={leftPressed ? require("../assets/left-arrow.png") : require("../assets/left-arrow-black.png")}
-            />
-          </Button>
-          <Button
-            variant="text"
-            onClick={() => {carousselRef.current.slickNext();setLeftPressed(false)}}
-          >
-            <img
-              className={!leftPressed ? "featured-left-arrow" : "featured-right-arrow"}
-              src={leftPressed ? require("../assets/right-arrow.png") : require("../assets/right-arrow-white.png")}
-            />
-          </Button>
-        </Box>
+        <Arrows
+          carousselRef={carousselRef}
+          setLeftPressed={setLeftPressed}
+          leftPressed={leftPressed}
+          className="featured-arrows-container"
+        />
       </Box>
       <Carousel
         className="featured-right-container"

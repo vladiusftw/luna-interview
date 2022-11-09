@@ -72,4 +72,52 @@ export const Stories = {
         "Cursus fames vel donec amet. Varius ultrices ac malesuada lacinia proin. Lectus malesua...",
     },
   ],
+  exploreStories: [
+    {
+      image: require("./assets/img6.png"),
+      title: "Title of the Story will go here...",
+      location: "Dubai, UAE",
+      date: "2 - 3 June 2022",
+      content:
+        "Cursus fames vel donec amet. Varius ultrices ac malesuada lacinia proin. Lectus malesua...",
+    },
+    {
+      image: require("./assets/img7.png"),
+    },
+    {
+      image: require("./assets/img8.png"),
+    },
+    {
+      image: require("./assets/img9.png"),
+    },
+    {
+      image: require("./assets/img10.png"),
+    },
+    {
+      image: require("./assets/img11.png"),
+    },
+    {
+      image: require("./assets/img6.png"),
+      title: "Title of the Story will go here...",
+      location: "Dubai, UAE",
+      date: "2 - 3 June 2022",
+      content:
+        "Cursus fames vel donec amet. Varius ultrices ac malesuada lacinia proin. Lectus malesua...",
+    },
+    {
+      image: require("./assets/img7.png"),
+    },
+    {
+      image: require("./assets/img8.png"),
+    },
+    {
+      image: require("./assets/img9.png"),
+    },
+    {
+      image: require("./assets/img10.png"),
+    },
+    {
+      image: require("./assets/img11.png"),
+    },
+  ],
 };
