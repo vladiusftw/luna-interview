@@ -1,0 +1,35 @@
+.mini-navbar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    transition: transform 1s linear;
+}
+
+.navbar-logo{}
+
+.navbar-right-container{}
+
+.navbar-item{}
+
+@media (max-width:600px){
+   
+    
+}
+
+@media (min-width:600px) and (max-width:900px){
+    
+    
+}
+
+@media (min-width: 900px){
+    .mini-navbar-container{
+        display: none;
+    }
+}

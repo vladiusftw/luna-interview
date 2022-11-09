@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -33,6 +33,7 @@ const FeaturedStories = () => {
   };
 
   const carousselRef = useRef(null);
+  const [leftPressed,setLeftPressed] = useState(true)
 
   const Item = ({ item }) => {
     return (
@@ -81,20 +82,20 @@ const FeaturedStories = () => {
         <Box className="featured-arrows-container">
           <Button
             variant="text"
-            onClick={() => carousselRef.current.slickPrev()}
+            onClick={() => {carousselRef.current.slickPrev();setLeftPressed(true)}}
           >
             <img
-              className="featured-left-arrow"
-              src={require("../assets/left-arrow.png")}
+              className={leftPressed ? "featured-left-arrow" : "featured-right-arrow"}
+              src={leftPressed ? require("../assets/left-arrow.png") : require("../assets/left-arrow-black.png")}
             />
           </Button>
           <Button
             variant="text"
-            onClick={() => carousselRef.current.slickNext()}
+            onClick={() => {carousselRef.current.slickNext();setLeftPressed(false)}}
           >
             <img
-              className="featured-right-arrow"
-              src={require("../assets/right-arrow.png")}
+              className={!leftPressed ? "featured-left-arrow" : "featured-right-arrow"}
+              src={leftPressed ? require("../assets/right-arrow.png") : require("../assets/right-arrow-white.png")}
             />
           </Button>
         </Box>

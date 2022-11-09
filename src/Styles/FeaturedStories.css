@@ -4,10 +4,6 @@
     margin-top: 100px;
 }
 
-.featured-left-container{
-
-}
-
 .featured-left-title{
     display: block;
     text-transform: uppercase;
@@ -30,6 +26,10 @@
 
 .featured-right-arrow{
     border-radius: 100px;
+}
+
+.featured-rotate-arrow{
+    transform: rotate('90deg')
 }
 
 .featured-right-container{
