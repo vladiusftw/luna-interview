@@ -33,6 +33,38 @@ const ExploreCaroussel = () => {
     return (
       <Box className="explore-item-container">
         <img src={item.image} className="explore-item-img" />
+        {index == 0 || index == 5 ? (
+          <Box>
+            <Typography className="explore-item-title" variant="p">
+              {item.title}
+            </Typography>
+            <Box className="explore-item-icons-container">
+              <Box className="explore-item-loc-container">
+                <img
+                  className="explore-item-loc-img"
+                  src={require("../assets/pin.png")}
+                />
+                <Typography className="explore-item-loc-text" variant="p">
+                  {item.location}
+                </Typography>
+              </Box>
+              <Box className="explore-item-date-container">
+                <img
+                  className="explore-item-date-img"
+                  src={require("../assets/calendar.png")}
+                />
+                <Typography className="explore-item-date-text" variant="p">
+                  {item.date}
+                </Typography>
+              </Box>
+            </Box>
+            <Typography className="explore-item-content" variant="p">
+              {item.content}
+            </Typography>
+          </Box>
+        ) : (
+          <></>
+        )}
       </Box>
     );
   };

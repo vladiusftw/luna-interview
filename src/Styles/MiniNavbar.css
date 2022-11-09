@@ -12,6 +12,13 @@
   z-index: 2;
 }
 
+.mini-navbar-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
 .mini-navbar-item {
   font-family: "Proxima-Nova-Bold";
 }
@@ -21,9 +28,9 @@
 }
 
 @media (max-width: 600px) {
-  .mini-navbar-container {
-    gap: 80px;
-    padding-top: 120px;
+  .mini-navbar-items-container {
+    margin-top: 180px;
+    gap: 60px;
   }
 
   .mini-navbar-item {
@@ -32,9 +39,9 @@
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .mini-navbar-container {
-    gap: 90px;
-    padding-top: 140px;
+  .mini-navbar-items-container {
+    margin-top: 180px;
+    gap: 70px;
   }
 
   .mini-navbar-item {

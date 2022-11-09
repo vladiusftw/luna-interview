@@ -11,25 +11,27 @@ const MiniNavbar = (props) => {
         transform: props.openMenu ? "translateX(0%)" : "translateX(100%)",
       }}
     >
-      <Typography className="mini-navbar-item" variant="p">
-        {"Blockchain"}
-      </Typography>
+      <Box className="mini-navbar-items-container">
+        <Typography className="mini-navbar-item" variant="p">
+          {"Blockchain"}
+        </Typography>
 
-      <Typography className="mini-navbar-item" variant="p">
-        {"Crypto Currency"}
-      </Typography>
+        <Typography className="mini-navbar-item" variant="p">
+          {"Crypto Currency"}
+        </Typography>
 
-      <Typography className="mini-navbar-item" variant="p">
-        {"NFT"}
-      </Typography>
+        <Typography className="mini-navbar-item" variant="p">
+          {"NFT"}
+        </Typography>
 
-      <Typography className="mini-navbar-item" variant="p">
-        {"Metaverse"}
-      </Typography>
+        <Typography className="mini-navbar-item" variant="p">
+          {"Metaverse"}
+        </Typography>
 
-      <Typography className="mini-navbar-item" variant="p">
-        {"Education"}
-      </Typography>
+        <Typography className="mini-navbar-item" variant="p">
+          {"Education"}
+        </Typography>
+      </Box>
     </Box>
   );
 };
