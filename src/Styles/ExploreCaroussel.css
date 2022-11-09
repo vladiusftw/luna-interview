@@ -27,6 +27,7 @@
 .explore-arrows-small-container {
   margin-top: 50px;
   align-self: center;
+  z-index: 0;
 }
 
 .explore-arrows-container {

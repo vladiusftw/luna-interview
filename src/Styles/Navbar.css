@@ -21,7 +21,7 @@
 }
 
 .small-menu {
-  z-index: 1;
+  z-index: 3;
 }
 
 .navbar-item:hover {
